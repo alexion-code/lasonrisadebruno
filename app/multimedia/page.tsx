@@ -38,11 +38,15 @@ const slideItems = [
 export default function Multimedia() {
   const [slideActiveItem, setSlideActiveItem] = useState<number>(1);
   return (
-    <main className="flex flex-col h-full items-center justify-between p-24 space-y-4">
+    <main className="flex flex-col h-full items-center justify-center p-4 md:p-16 lg:p-24 space-y-4">
       <h3 className="mb-2 mt-0 text-3xl font-medium leading-tight text-primary">
         Multimedia
       </h3>
-      <div id="gallery" className="relative w-full" data-carousel="slide">
+      <div
+        id="gallery"
+        className="relative w-full h-full"
+        data-carousel="slide"
+      >
         {/* Carousel wrapper */}
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {slideItems.map((item, index) => (

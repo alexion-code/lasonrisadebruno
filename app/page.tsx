@@ -2,11 +2,11 @@
 
 export default function Home() {
   return (
-    <main className="flex flex-col h-full items-center justify-between pl-24 pr-24 pb-24 pt-8 b-8 text-justify">
+    <main className="flex flex-col h-full items-center justify-between b-8 text-justify pl-8 pr-8 pb-8 pt-8 md:pl-16 md:pr-16 md:pb-16 md:pt-4 lg:pl-24 lg:pr-24 lg:pb-24 lg:pt-8">
       <h3 className="mb-2 mt-8 text-3xl font-medium leading-tight text-primary">
         ¿Quienes somos?
       </h3>
-      <div className="ml-24 mr-24 mt-8">
+      <div className="ml-4 mr-4 mt-2 md:ml-16 md:mr-16 md:mt-6 lg:ml-24 lg:mr-24 lg:mt-8">
         <p className="pt-2">
           <b>{`La Sonrisa de Bruno `}</b>
           nace en Abril del 2023 con un claro objetivo: ayudar a la
@@ -36,7 +36,7 @@ export default function Home() {
       <h3 className="mb-2 mt-16 text-3xl font-medium leading-tight text-primary">
         Nuestra Misión:
       </h3>
-      <div className="ml-24 mr-24 mt-8">
+      <div className="ml-4 mr-4 mt-2 md:ml-16 md:mr-16 md:mt-6 lg:ml-24 lg:mr-24 lg:mt-8">
         <p className="pt-2">
           <b>-Apoyar y ayudar a la investigación del cáncer infantil</b>
         </p>
