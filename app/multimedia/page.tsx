@@ -43,7 +43,7 @@ export default function Multimedia() {
         Multimedia
       </h3>
       <div id="gallery" className="relative w-full" data-carousel="slide">
-        {/* <!-- Carousel wrapper --> */}
+        {/* Carousel wrapper */}
         <div className="relative h-56 overflow-hidden rounded-lg md:h-96">
           {slideItems.map((item, index) => (
             <div
