@@ -3,9 +3,18 @@
 import Carousel from "../components/Carousel";
 
 const slides = [
-  "https://images.unsplash.com/photo-1506501139174-099022df5260?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80",
-  "https://images.unsplash.com/photo-1523438097201-512ae7d59c44?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
-  "https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-6.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-7.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-8.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-9.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-10.jpg",
+  "https://flowbite.s3.amazonaws.com/docs/gallery/square/image-11.jpg",
 ];
 export default function Multimedia() {
   return (
