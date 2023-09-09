@@ -1,8 +1,9 @@
+"use client";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import NavBar from "./components/navbar";
-
 import "./globals.css";
+import { ThemeProvider } from "@material-tailwind/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,10 +25,12 @@ export default function RootLayout({
         <a rel="icon" href="/favicon.ico" />
       </Head>
       <body className={inter.className}>
-        <div className="min-h-screen">
-          <NavBar />
-          {children}
-        </div>
+        <ThemeProvider>
+          <div className="min-h-screen">
+            <NavBar />
+            {children}
+          </div>
+        </ThemeProvider>
       </body>
     </html>
   );
