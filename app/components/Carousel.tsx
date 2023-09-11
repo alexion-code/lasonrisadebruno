@@ -1,16 +1,21 @@
+"use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
 
 export default function Carousel({
-  children: slides,
+  children,
   autoSlide = false,
   autoSlideInterval = 3000,
+}: {
+  children: [];
+  autoSlide: boolean;
+  autoSlideInterval: number;
 }) {
   const [curr, setCurr] = useState(0);
   const prev = () =>
-    setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1));
+    setCurr((curr) => (curr === 0 ? children.length - 1 : curr - 1));
   const next = () =>
-    setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1));
+    setCurr((curr) => (curr === children.length - 1 ? 0 : curr + 1));
 
   useEffect(() => {
     if (!autoSlide) return;
@@ -23,7 +28,7 @@ export default function Carousel({
         className="flex transition-transform ease-out duration-500"
         style={{ transform: `translateX(-${curr * 100}%)` }}
       >
-        {slides}
+        {children}
       </div>
       <div className="absolute inset-0 flex items-center justify-between p-4">
         <button
@@ -42,7 +47,7 @@ export default function Carousel({
 
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
-          {slides.map((_, i) => (
+          {children.map((_, i) => (
             <div
               key={i * 1000}
               className={`transition-all w-3 h-3 bg-white rounded-full ${
