@@ -1,15 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
+import { Props } from "tw-element";
 
 export default function Carousel({
   children,
   autoSlide = false,
   autoSlideInterval = 3000,
 }: {
-  children: [];
-  autoSlide: boolean;
-  autoSlideInterval: number;
+  children?: any;
+  autoSlide?: boolean;
+  autoSlideInterval?: number;
 }) {
   const [curr, setCurr] = useState(0);
   const prev = () =>
@@ -47,7 +48,7 @@ export default function Carousel({
 
       <div className="absolute bottom-4 right-0 left-0">
         <div className="flex items-center justify-center gap-2">
-          {children.map((_, i) => (
+          {children.map((_: any, i: number) => (
             <div
               key={i * 1000}
               className={`transition-all w-3 h-3 bg-white rounded-full ${
