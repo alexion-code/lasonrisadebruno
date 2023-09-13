@@ -1,7 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "react-feather";
-import { Props } from "tw-element";
 
 export default function Carousel({
   children,
